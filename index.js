@@ -22,7 +22,7 @@ app.use(
 
 // Endpoint for all the Cleveland artworks that have an image
 
-app.get("/cleveland-api/artworks", async (req, res) => {
+app.get("/artworks", async (req, res) => {
   try {
     const response = await axios.get(
       "https://openaccess-api.clevelandart.org/api/artworks/?has_image=1"
@@ -35,7 +35,7 @@ app.get("/cleveland-api/artworks", async (req, res) => {
 
 // Endpoint to handle query parameters for the Cleveland API
 
-app.get("/cleveland-api/search", async (req, res) => {
+app.get("/search", async (req, res) => {
   const queryParams = new URLSearchParams(req.query).toString();
   const url = `https://openaccess-api.clevelandart.org/api/artworks/?${queryParams}`;
   console.log(url);
