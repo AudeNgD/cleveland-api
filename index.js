@@ -54,7 +54,7 @@ app.get("/search", async (req, res) => {
 
 // Endpoint to get the details of a specific artwork
 app.get("/artworks/:artworkId", async (req, res) => {
-  const { artworkId } = req.params.id;
+  const { artworkId } = req.params;
   try {
     const response = await axios.get(
       `https://openaccess-api.clevelandart.org/api/artworks/${artworkId}`
