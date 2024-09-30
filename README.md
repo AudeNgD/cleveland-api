@@ -1,7 +1,7 @@
-# Proxy server for the Victoria & Albert museum
+# Proxy server for the Cleveland Museum of Art API
 
 ## This project
-This is the proxy server set up to access the V&A API used by curatorly 'https://github.com/AudeNgD/curatorly'.
+This is the proxy server set up to access the Cleveland MA API used by curatorly 'https://github.com/AudeNgD/curatorly'.
 
 ## Instructions
 1. Fork and clone the repo `git clone https://github.com/AudeNgD/cleveland-api`
